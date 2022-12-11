@@ -154,7 +154,7 @@ public char[] scramble( Random random, String inputString )
 			{
 				gameboard1[i] = let1.toCharArray()[i];
 			}
-			JOptionPane.showMessageDialog(null,"\t\tGood Job !!\n" + fp1.getWord() + " is the right word !!\nCongradulations you guessed the word!\n So far you have won " + numTries1 + " time(s)! \nYour Score is : "+ score1,"Word Guessing Game", 0);
+			JOptionPane.showMessageDialog(null,"\t\tGood Job !!\n" + fp1.getWord() + " is the right word !!\nCongradulations you guessed the word!\n So far you have won " + numTries1 + " time(s)! \nYour Score is : "+ score1,"Word Guessing Game", 1);
 
 		}
 
@@ -179,7 +179,7 @@ public char[] scramble( Random random, String inputString )
 
 	
 
-		JOptionPane.showMessageDialog(null,"   Player 2  ","Word Guessing Game", 0);
+		JOptionPane.showMessageDialog(null,"   Player 2  ","Word Guessing Game", 1);
 
     	s2= "Choose a letter to complete the word:\n";
 
@@ -215,11 +215,9 @@ public char[] scramble( Random random, String inputString )
 			{
 				gameboard2[i] = let2.toCharArray()[i];
 			}
-			JOptionPane.showMessageDialog(null,"\t\tGood Job !!\n" + fp2.getWord() + " is the right word !!\nCongradulations you guessed the word!\n So far you have won " + numTries2 + " time(s)! \nYour Score is : "+ score2,"Word Guessing Game", 0);
+			JOptionPane.showMessageDialog(null,"\t\tGood Job !!\n" + fp2.getWord() + " is the right word !!\nCongradulations you guessed the word!\n So far you have won " + numTries2 + " time(s)! \nYour Score is : "+ score2,"Word Guessing Game", 1);
 		}
 
-	
-		
 		else	//tests if letter was not in the word
 		{	
 			while(count2 != 4 && !let2.equals(fp2.getWord()) )
@@ -251,8 +249,6 @@ public char[] scramble( Random random, String inputString )
 			    System.exit(0);	
 		    }
 		}
-		
-
 	}
 	
 
